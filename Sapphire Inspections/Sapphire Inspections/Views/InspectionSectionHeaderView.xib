@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Bold.otf">
+            <string>SFUIText-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="InspectionSectionHeaderView" customModule="Sparkle" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="srt-u3-99Z">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+                    <color key="backgroundColor" red="0.3529411764705882" green="0.3529411764705882" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Woo-b6-7KP">
+                    <rect key="frame" x="8" y="8" width="324" height="20"/>
+                    <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="17"/>
+                    <color key="textColor" red="0.94901961089999998" green="0.94901961089999998" blue="0.94901961089999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="single_white" translatesAutoresizingMaskIntoConstraints="NO" id="Sue-wS-Adk">
+                    <rect key="frame" x="336" y="0.0" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="9Fw-QU-I6N"/>
+                        <constraint firstAttribute="height" constant="35" id="jhy-Un-7w6"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20G-Ut-djm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Sue-wS-Adk" secondAttribute="trailing" constant="4" id="8ms-6h-7sd"/>
+                <constraint firstItem="20G-Ut-djm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ARF-9x-WCs"/>
+                <constraint firstItem="Woo-b6-7KP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="DWx-08-djE"/>
+                <constraint firstAttribute="bottom" secondItem="20G-Ut-djm" secondAttribute="bottom" id="FCr-FU-NgR"/>
+                <constraint firstItem="20G-Ut-djm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="J23-wS-w6c"/>
+                <constraint firstAttribute="bottom" secondItem="srt-u3-99Z" secondAttribute="bottom" id="Kce-Qx-cFu"/>
+                <constraint firstAttribute="trailing" secondItem="20G-Ut-djm" secondAttribute="trailing" id="eV9-I5-bZ0"/>
+                <constraint firstItem="srt-u3-99Z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="foD-Kl-1Gw"/>
+                <constraint firstItem="Sue-wS-Adk" firstAttribute="leading" secondItem="Woo-b6-7KP" secondAttribute="trailing" constant="4" id="fuU-0c-3Wk"/>
+                <constraint firstItem="srt-u3-99Z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fxA-e1-I5J"/>
+                <constraint firstAttribute="trailing" secondItem="srt-u3-99Z" secondAttribute="trailing" id="gNS-lg-Y1n"/>
+                <constraint firstItem="Woo-b6-7KP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="ghq-2m-Dmi"/>
+                <constraint firstItem="Sue-wS-Adk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oPi-CU-Uoh"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collapseButton" destination="20G-Ut-djm" id="O7d-23-erB"/>
+                <outlet property="sectionLabel" destination="Woo-b6-7KP" id="gt1-Yf-cRj"/>
+                <outlet property="singleMultiTypeImageView" destination="Sue-wS-Adk" id="AIe-6W-nXq"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="single_white" width="35" height="35"/>
+    </resources>
+</document>

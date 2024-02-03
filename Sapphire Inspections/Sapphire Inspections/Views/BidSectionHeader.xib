@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20019"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Medium.otf">
+            <string>SFUIText-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BidSectionHeader" customModule="Sparkle" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q85-8J-A4L">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorted by Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="kQk-fF-7JY">
+                    <rect key="frame" x="10" y="8" width="300" height="17"/>
+                    <fontDescription key="fontDescription" name="SFUIText-Medium" family="SF UI Text" pointSize="14"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Q85-8J-A4L" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1TE-6J-xbM"/>
+                <constraint firstAttribute="bottom" secondItem="kQk-fF-7JY" secondAttribute="bottom" constant="5" id="5L6-eK-C65"/>
+                <constraint firstItem="kQk-fF-7JY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Gc8-Qr-ylh"/>
+                <constraint firstItem="Q85-8J-A4L" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ght-gd-KBr"/>
+                <constraint firstAttribute="trailing" secondItem="Q85-8J-A4L" secondAttribute="trailing" id="XzW-Ss-ldQ"/>
+                <constraint firstAttribute="bottom" secondItem="Q85-8J-A4L" secondAttribute="bottom" id="ar7-Fl-pDT"/>
+                <constraint firstAttribute="trailing" secondItem="kQk-fF-7JY" secondAttribute="trailing" constant="10" id="dJn-a3-KYP"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="background" destination="Q85-8J-A4L" id="6DI-ch-qKb"/>
+                <outlet property="titleLabel" destination="kQk-fF-7JY" id="CVK-sX-ZmR"/>
+            </connections>
+            <point key="canvasLocation" x="280" y="171.81409295352324"/>
+        </view>
+    </objects>
+</document>

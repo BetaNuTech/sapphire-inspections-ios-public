@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Bold.otf">
+            <string>SFUIText-Bold</string>
+        </array>
+        <array key="SF-UI-Text-Heavy.otf">
+            <string>SFUIText-Heavy</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="GW4-Ma-Jdl" customClass="InspectionSectionHeaderView" customModule="Sparkle" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4j9-bf-Ed4">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
+                    <color key="backgroundColor" red="0.35294117650000001" green="0.35294117650000001" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUx-c5-Rcj">
+                    <rect key="frame" x="8" y="8" width="324" height="20"/>
+                    <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="17"/>
+                    <color key="textColor" red="0.94901961089999998" green="0.94901961089999998" blue="0.94901961089999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqI-cw-nB4">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDy-z9-JRa">
+                    <rect key="frame" x="8" y="35" width="80" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="T9I-x4-czM"/>
+                        <constraint firstAttribute="width" constant="80" id="jHz-Pk-ss8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIText-Heavy" family="SF UI Text" pointSize="15"/>
+                    <state key="normal" title="ADD">
+                        <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="s_cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDC-k8-Kdy">
+                    <rect key="frame" x="287" y="35" width="80" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="1ea-sg-pjk"/>
+                        <constraint firstAttribute="width" constant="80" id="DN5-Z1-mvt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIText-Heavy" family="SF UI Text" pointSize="15"/>
+                    <state key="normal" title="REMOVE">
+                        <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="s_cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="multi_white" translatesAutoresizingMaskIntoConstraints="NO" id="MEn-EW-gKK">
+                    <rect key="frame" x="336" y="0.0" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="Iz0-e3-vJ2"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="U39-jF-2F1"/>
+                        <constraint firstAttribute="height" constant="35" id="maq-Q0-Bpf"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="ozf-wS-lOS"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="4j9-bf-Ed4" firstAttribute="top" secondItem="GW4-Ma-Jdl" secondAttribute="top" id="3YP-hn-H4f"/>
+                <constraint firstItem="IDy-z9-JRa" firstAttribute="leading" secondItem="GW4-Ma-Jdl" secondAttribute="leading" constant="8" id="8Jb-zb-7By"/>
+                <constraint firstAttribute="trailing" secondItem="dDC-k8-Kdy" secondAttribute="trailing" constant="8" id="9Ad-QE-6aa"/>
+                <constraint firstAttribute="bottom" secondItem="AqI-cw-nB4" secondAttribute="bottom" id="ENy-7Y-dQc"/>
+                <constraint firstItem="MEn-EW-gKK" firstAttribute="top" secondItem="GW4-Ma-Jdl" secondAttribute="top" id="RVV-WY-7kB"/>
+                <constraint firstItem="XUx-c5-Rcj" firstAttribute="leading" secondItem="GW4-Ma-Jdl" secondAttribute="leading" constant="8" id="SID-Ev-N3W"/>
+                <constraint firstAttribute="trailing" secondItem="AqI-cw-nB4" secondAttribute="trailing" id="SrA-By-IkL"/>
+                <constraint firstAttribute="bottom" secondItem="4j9-bf-Ed4" secondAttribute="bottom" id="V49-8I-ymF"/>
+                <constraint firstItem="4j9-bf-Ed4" firstAttribute="leading" secondItem="GW4-Ma-Jdl" secondAttribute="leading" id="Vpi-kz-eXN"/>
+                <constraint firstAttribute="trailing" secondItem="4j9-bf-Ed4" secondAttribute="trailing" id="doO-oi-Cnd"/>
+                <constraint firstItem="MEn-EW-gKK" firstAttribute="leading" secondItem="XUx-c5-Rcj" secondAttribute="trailing" constant="4" id="k5l-0e-rUv"/>
+                <constraint firstItem="AqI-cw-nB4" firstAttribute="top" secondItem="GW4-Ma-Jdl" secondAttribute="top" id="kI7-ak-dvs"/>
+                <constraint firstAttribute="trailing" secondItem="MEn-EW-gKK" secondAttribute="trailing" constant="4" id="olh-uF-Xr4"/>
+                <constraint firstItem="AqI-cw-nB4" firstAttribute="leading" secondItem="GW4-Ma-Jdl" secondAttribute="leading" id="orw-Ji-zPA"/>
+                <constraint firstItem="XUx-c5-Rcj" firstAttribute="top" secondItem="GW4-Ma-Jdl" secondAttribute="top" constant="8" id="qjf-xi-ZQD"/>
+                <constraint firstAttribute="bottom" secondItem="dDC-k8-Kdy" secondAttribute="bottom" constant="8" id="s1k-fW-ld3"/>
+                <constraint firstAttribute="bottom" secondItem="IDy-z9-JRa" secondAttribute="bottom" constant="8" id="vJt-0u-X80"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addButton" destination="IDy-z9-JRa" id="oxL-34-LYj"/>
+                <outlet property="collapseButton" destination="AqI-cw-nB4" id="FUq-od-gfy"/>
+                <outlet property="removeButton" destination="dDC-k8-Kdy" id="QEG-3J-cJ2"/>
+                <outlet property="sectionLabel" destination="XUx-c5-Rcj" id="MTf-RV-RM8"/>
+                <outlet property="singleMultiTypeImageView" destination="MEn-EW-gKK" id="uJu-J8-0ch"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="multi_white" width="35" height="35"/>
+    </resources>
+</document>

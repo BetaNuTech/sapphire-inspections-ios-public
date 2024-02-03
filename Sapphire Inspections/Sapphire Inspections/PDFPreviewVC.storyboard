@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Hn-bD-ujW">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PreviewVC-->
+        <scene sceneID="BoV-cP-0sY">
+            <objects>
+                <viewController id="7Hn-bD-ujW" customClass="PDFPreviewVC" customModule="Sparkle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YGd-n0-0Xl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dqx-kG-8PB" customClass="SparkleNavigationBar" customModule="Sparkle" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <color key="barTintColor" red="0.32156863810000003" green="0.59607845540000004" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.94901961089999998" green="0.94901961089999998" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Report" id="urm-RF-avf">
+                                        <barButtonItem key="leftBarButtonItem" title="Close" id="8Wt-DF-2cm">
+                                            <color key="tintColor" red="0.94901961089999998" green="0.94901961089999998" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="close:" destination="7Hn-bD-ujW" id="fkA-kX-pCQ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Share" id="aCV-39-UCZ">
+                                            <color key="tintColor" red="0.94901961089999998" green="0.94901961089999998" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="share:" destination="7Hn-bD-ujW" id="l3U-Br-XFc"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fng-UA-T8S">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RPO-oX-MTf"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RPO-oX-MTf" firstAttribute="trailing" secondItem="Dqx-kG-8PB" secondAttribute="trailing" id="2iP-6z-0vo"/>
+                            <constraint firstItem="fng-UA-T8S" firstAttribute="bottom" secondItem="RPO-oX-MTf" secondAttribute="bottom" id="A1Y-Qo-T5O"/>
+                            <constraint firstItem="fng-UA-T8S" firstAttribute="leading" secondItem="RPO-oX-MTf" secondAttribute="leading" id="IoF-p7-D88"/>
+                            <constraint firstItem="Dqx-kG-8PB" firstAttribute="leading" secondItem="RPO-oX-MTf" secondAttribute="leading" id="Kgy-6q-bPc"/>
+                            <constraint firstItem="fng-UA-T8S" firstAttribute="trailing" secondItem="RPO-oX-MTf" secondAttribute="trailing" id="cwd-1H-32k"/>
+                            <constraint firstItem="fng-UA-T8S" firstAttribute="top" secondItem="Dqx-kG-8PB" secondAttribute="bottom" id="tKo-qH-dTL"/>
+                            <constraint firstItem="Dqx-kG-8PB" firstAttribute="top" secondItem="RPO-oX-MTf" secondAttribute="top" id="wJE-j9-6RQ"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="navView" destination="Dqx-kG-8PB" id="Oxh-hB-ZjI"/>
+                        <outlet property="shareButton" destination="aCV-39-UCZ" id="bh8-3R-hie"/>
+                        <outlet property="webView" destination="fng-UA-T8S" id="qv9-wA-tXu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1cM-d1-vR2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="684" y="211.84407796101951"/>
+        </scene>
+    </scenes>
+</document>

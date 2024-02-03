@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Medium.otf">
+            <string>SFUIText-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SortSectionHeader" customModule="Sparkle" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="18"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q85-8J-A4L">
+                    <color key="backgroundColor" red="0.58039218187332153" green="0.74117648601531982" blue="0.94901961088180542" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sorted by Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQk-fF-7JY">
+                    <frame key="frameInset" minX="8" width="116" height="18"/>
+                    <fontDescription key="fontDescription" name="SFUIText-Medium" family="SF UI Text" pointSize="13"/>
+                    <color key="textColor" red="0.94901961088180542" green="0.94901961088180542" blue="0.94901961088180542" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Q85-8J-A4L" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1TE-6J-xbM"/>
+                <constraint firstAttribute="bottom" secondItem="kQk-fF-7JY" secondAttribute="bottom" id="5L6-eK-C65"/>
+                <constraint firstItem="Q85-8J-A4L" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ght-gd-KBr"/>
+                <constraint firstItem="kQk-fF-7JY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Jih-Zd-08m"/>
+                <constraint firstAttribute="trailing" secondItem="Q85-8J-A4L" secondAttribute="trailing" id="XzW-Ss-ldQ"/>
+                <constraint firstAttribute="bottom" secondItem="Q85-8J-A4L" secondAttribute="bottom" id="ar7-Fl-pDT"/>
+                <constraint firstItem="kQk-fF-7JY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="gfO-8Y-IqO"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="background" destination="Q85-8J-A4L" id="6DI-ch-qKb"/>
+                <outlet property="titleLabel" destination="kQk-fF-7JY" id="CVK-sX-ZmR"/>
+            </connections>
+            <point key="canvasLocation" x="281" y="177"/>
+        </view>
+    </objects>
+</document>
